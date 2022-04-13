@@ -1,0 +1,116 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autotest Covid-19 App | Cambar Covid-19</title>
+    <link href="{{ url_for('static', filename='css/styleT.css') }}" rel="stylesheet">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#">aar sa bopou ci covid-19</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!-- header end -->
+
+ <!-- nav start -->
+    <div class="nav-overlay"></div>
+    <nav class="nav">
+        <div class="head">
+        <strong>Menu</strong>
+        <div class="close">&times;</div>
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">Saytu</a></li>
+            <li><a href="/indexe/">Cambar</a></li>
+            <li><a href="/recherche/">Fi Jangoroji Tollu</a></li>
+        </ul>
+    </nav>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Tambali</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Liga wara xam ci jumtukaay ji <img src="../static/img/rapport.png" width="50" heigth="50"></span></div>
+        <div class="info-list">
+            <div class="info"><span>1.</span> <span>Coronavirusyi</span> doomu jangoro yu yaatu lanu yuy tek feebar nit yi ak malayi. Nit yi daf léen di andil ay jafe-jafe ci seen noyikay lu melni socc wala jangoro yu guena jegi dayo.</div>
+            <div class="info"><span>2.</span> Lii nak ab jumtukaay boo meuna saytoo baxam yor ga yiy mandargaal nit ku am <span>covid-19</span></div>
+            <div class="info"><span>3.</span> Ay laaj yoo wara tontu ak <span>waaw</span> wala <span>deideid</span> ci <span>15 seconds</span> la...</div>
+            <div class="info"><span>4.</span> Budé daga am métit wala ay mandaarga yula jaaxal ga dém keur doktor.</div>
+            <div class="info"><span>5.</span> Budé beugoo deif càmbar gi ga beus bouton <span>Baayi</span>.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Baayi</button>
+            <button class="restart">Cambar</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">téla cambar jangoroji<img src="../static/img/virus.png" width="30" heigth="30"> bokuna ci lilay aar!</div>
+            <div class="timer">
+                <div class="time_left_txt">Simili yi</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Bici Topou</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-user-md"></i>
+        </div>
+        <div class="complete_text">Noopi ga ci càmbar gi</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Tambaliwaate</button>
+            <button class="quit">Baayi</button>
+            <button class="son"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+              <path style="fill:#1307f2;" d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+              <path style="fill:#1307f2;" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+            </svg></button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="{{ url_for('static', filename='js/questions.js') }}"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="{{ url_for('static', filename='js/scriptt.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
